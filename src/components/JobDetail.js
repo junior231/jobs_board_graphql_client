@@ -8,7 +8,11 @@ function JobDetail() {
   const { jobId } = useParams();
 
   useEffect(() => {
-    getJob(jobId).then(setJob);
+    getJob(jobId)
+      .then(setJob)
+      .catch((err) => {
+        console.error(err);
+      });
   }, [jobId]);
 
   if (!job) {
