@@ -34,5 +34,6 @@
     "extends": [
       "react-app"
     ]
-  }
+  },
+  "proxy": "https://jobboardserver.herokuapp.com/"
 }

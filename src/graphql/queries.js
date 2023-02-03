@@ -1,6 +1,9 @@
 import { ApolloClient, gql, InMemoryCache } from "@apollo/client";
 
-const GRAPHQL_URL = "http://localhost:9000/graphql";
+// developement ENV
+// const GRAPHQL_URL = "http://localhost:9000/graphql";
+
+const GRAPHQL_URL = "https://jobboardserver.herokuapp.com/";
 
 // create new ApolloClient and pass in uri, and cache
 export const client = new ApolloClient({
